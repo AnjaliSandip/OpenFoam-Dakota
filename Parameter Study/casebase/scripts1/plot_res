@@ -1,0 +1,10 @@
+set term x11 persist
+
+set logscale y
+set ylabel 'Residual'
+set xlabel 'Iteration'
+plot 	"< cat log | grep 'Solving for Ux' 	| cut -d' ' -f9 | tr -d ','" with lines title 'Ux',\
+	"< cat log | grep 'Solving for Uy' 	| cut -d' ' -f9 | tr -d ','" with lines title 'Uy' ,\
+	"< cat log | grep 'Solving for p' 	| cut -d' ' -f9 | tr -d ','" every 6 with lines title 'p'  
+pause 2
+reread

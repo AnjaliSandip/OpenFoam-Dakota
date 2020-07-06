@@ -1,0 +1,36 @@
+#set term x11 persist
+set terminal pdf 
+
+set output "./scripts2/out_coeffs.pdf"
+
+set multiplot layout 1,2
+
+set xtics font ", 6" 
+set ytics font ", 6" 
+set xlabel font ", 6" 
+set ylabel font ", 6" 
+set key top left
+set key font ',8'
+
+
+
+set size 1, 0.5
+set xlabel 'Iteration'
+set ylabel 'Drag coefficient'
+set grid
+
+plot [10:][] 'postProcessing/forceCoeffs_object/0/forceCoeffs.dat' u 0:3 w l lc 3 title 'Drag coefficient'
+
+
+
+set size 1, 0.5
+
+set origin 0, 0.5
+set xlabel 'Iteration'
+set ylabel 'Lift coefficient'
+set grid
+
+plot [10:][] 'postProcessing/forceCoeffs_object/0/forceCoeffs.dat' u 0:4 w l lc 1 title 'Lift coefficient'
+
+unset multiplot
+
