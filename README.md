@@ -13,7 +13,7 @@ If you use this program, please cite this repository -- Sandip, A. 2019, OpenFOA
 About: This program is maintained by Anjali Sandip.
 
 The software versions are listed below. 
-The interface program can be extended to other versions of Elmer FEM, OpenFoam and Dakota with minor modifications.
+The interface program can be extended to other versions of OpenFoam and Dakota with minor modifications.
 
  - Sandia Dakota version 6.10
  - OpenFoam versions 4,5 and 6
