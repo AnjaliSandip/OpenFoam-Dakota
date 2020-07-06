@@ -1,0 +1,30 @@
+set terminal qt
+#set terminal x11
+#set terminal pdf 
+#set output "solution.pdf"
+
+#set term postscript color
+#set output "solution.ps"
+
+set title 'Solution at time 20 s' 
+
+set xlabel 'Diameter'
+set ylabel 'U_x' 
+
+#set xtics 0,0.1,1.
+set grid
+
+
+#set key font ',6'
+#set key spacing 0.5
+#set key samplen 2
+#set key top
+
+
+plot [][] \
+ './postProcessing/sampleDict/20/s2_U.xy' u 1:2 w lp lt 1 lc rgb 'blue' pt 7 title 'Numerical solution', \
+   1.5848398 *(1-x**2/0.5**2) lc rgb 'red' title 'Analytical solution'
+
+pause -1
+
+#    EOF
