@@ -8,7 +8,7 @@ The interface program along with benchmarks have been provided.
 Capabilities: This program integrates the capabilities of OpenFOAM and Sandia Dakota. 
 It provides a framework for multi-physics/phase simulations, uncertainty quantification, optimization, surrogate modeling, parallel computing and parameter studies.
 
-If you use this program, please cite this repository -- Sandip, A. 2019, OpenFOAM-Dakota, v1.0, Zenodo, DOI: 10.5281/zenodo.3758768
+If you use this program, please cite this repository -- Sandip, A. 2019, OpenFOAM-Dakota, v1.0, Zenodo, DOI: 10.5281/zenodo.3931101
 
 About: This program is maintained by Anjali Sandip.
 
