@@ -51,7 +51,7 @@ bash od_cylinder_driver_1.sh
 ###############################################################################
 
 #Extract the drag coefficient from OpenFOAM output and transfer it to Dakota results file, results.out
-tail -n 1 /OpenFOAM/Workpsace/Case/Directory/postProcessing/forceCoeffs_object/0/forceCoeffs.dat | awk '{ print $3 }' > $results
+tail -n 1 postProcessing/forceCoeffs_object/0/forceCoeffs.dat | awk '{ print $3 }' > $results
 
 
 
