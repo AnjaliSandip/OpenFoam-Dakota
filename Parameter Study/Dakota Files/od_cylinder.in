@@ -32,8 +32,8 @@ interface
            
   fork                                                                  #Simulation interface type
      analysis_drivers 'od_cylinder_driver.sh'                           #Calls the bash script that interfaces Dakota with OpenFOAM                                                       
-	 parameters_file='params.in'                                        #Dakota parameters file
-     results_file='/Dakota/Gui/Workspace/Dakota/Project/results.out'    #Dakota results file
+     parameters_file='params.in'                                        #Dakota parameters file
+     results_file='results.out'                                         #Dakota results file
      work_directory directory_tag                                       #Creates and tags work directory for every iteration, the work directory stores case files along with the results for that iteration
      copy_files = 'templatedir/*'                                       #Files stored in 'templatedir' folder would be copied to work directory corresponding every iteration
      named 'workdir' file_save  directory_save                          #Work directory, for every iteration, named 'workdir' saved in the Dakota workspace
