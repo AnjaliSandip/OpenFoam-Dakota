@@ -5,12 +5,10 @@ This is a common benchmark problem in fluid-structure interaction problems [1].
  - OpenFOAM solver: icoFOAM
  - OpenFOAM files courtesy WolffDynamics 
    http://www.wolfdynamics.com/tutorials.html?id=126
- - Boundary conditions: Fixed mean velocity at the cylinder inlet, 1 m/s; for more details on boundary conditions, refer to slide 13 of 'OpenFOAM Vortex Shedding Case Description' file
- - Data analysis: Centered parameter study
-   https://dakota.sandia.gov/sites/default/files/docs/6.10/html-ref/method-centered_parameter_study.html
- - Input parameter: Reynold's number (by varying the kinematic viscosity) -- between 0 and 200. 
- - Output parameter: Drag coefficient -- final timestep
- - To run the OpenFoam case, in the terminal
+ - Dakota/Data analysis: Listed parameter study
+   https://dakota.sandia.gov/sites/default/files/docs/6.3/html-ref/method-list_parameter_study.html
+ - Input parameters: Reynold's number (by varying the kinematic viscosity), between 0 and 200. 
+ - Output parameters: Drag coefficient at the final timestep
  - The results from this study were in good agreement (max. discrepancy - 5%) with literature data [2 - 13].
 
 References:
