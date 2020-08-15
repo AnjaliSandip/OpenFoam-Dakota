@@ -23,7 +23,7 @@ results=$2
 
 ############################################################################### 
 ##
-## Pre-processing Phase -- Transfer new set of values for the chosen input 
+## Pre-processing Phase: Transfer new set of values for the chosen input 
 ## parameters from Dakota to OpenFoam (OF)
 ###############################################################################
 
@@ -34,7 +34,7 @@ dprepro $params sim.template blockMeshDict
 
 ############################################################################### 
 ##
-## Execution Phase -- Run your simulation
+## Execution Phase: Run your simulation
 ##
 ###############################################################################
 
@@ -44,14 +44,14 @@ bash od_HP_driver1.sh
 
 ############################################################################### 
 ##
-## Post-processing Phase -- Extract (or calculate) quantities of interest
+## Post-processing Phase: Extract (or calculate) quantities of interest
 ##  from your simulation's output and write them to a properly-formatted
 ##  Dakota results file.
 ##
 ###############################################################################
 
-#Extract the maximum velocity at the cylinder outlet from OpenFOAM output and transfer it to Dakota results file, results.out
-awk 'NR == 11 { print $2 }'  /OpenFOAM/Workspace/Case/Directory/postProcessing/sampleDict/20/s2_U.xy > $results
+#Extract the maximum velocity at the cylinder outlet from OpenFOAM simulation results and transfer it to Dakota results file, results.out
+awk 'NR == 11 { print $2 }'  /postProcessing/sampleDict/20/s2_U.xy > $results
 
 
 
