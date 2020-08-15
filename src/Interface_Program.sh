@@ -24,7 +24,7 @@ results=$2
 
 ############################################################################### 
 ##
-## Pre-processing Phase -- Transfer new set of values for the chosen input 
+## Pre-processing Phase: Transfer new set of values for the chosen input 
 ## parameters from Dakota to OpenFoam (OF)
 ## OF_file: OpenFoam file
 ###############################################################################
@@ -35,7 +35,7 @@ dprepro $params sim.template OF_file
 
 ############################################################################### 
 ##
-## Execution Phase -- Run your simulation
+## Execution Phase: Run your simulation
 ##
 ###############################################################################
 
@@ -45,7 +45,7 @@ bash run_OpenFOAM.sh
 
 ############################################################################### 
 ##
-## Post-processing Phase -- Extract (or calculate) quantities of interest
+## Post-processing Phase: Extract (or calculate) quantities of interest
 ##  from your simulation's output and write them to a properly-formatted
 ##  Dakota results file.
 ##
