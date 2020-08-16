@@ -51,7 +51,7 @@ bash od_HP_driver1.sh
 ###############################################################################
 
 #Extract the maximum velocity at the cylinder outlet from OpenFOAM simulation results and transfer it to Dakota results file, results.out
-awk 'NR == 11 { print $2 }'  /postProcessing/sampleDict/20/s2_U.xy > $results
+awk 'NR == 11 { print $2 }'  postProcessing/sampleDict/20/s2_U.xy > $results
 
 
 
