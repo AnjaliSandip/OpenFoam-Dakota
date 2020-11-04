@@ -10,13 +10,6 @@ It provides a framework for multi-physics/phase simulations, uncertainty quantif
 
 If you use this program, please cite this repository -- Sandip, A. 2019, OpenFOAM-Dakota, v1.0, Zenodo, DOI: 10.5281/zenodo.3931101
 
-About: This program is maintained by Anjali Sandip.
+About: This program is maintained by Anjali Sandip. It integrates the capabilities of electromagnetic design software, Elmer FEM, and data analytics toolbox, Dakota.  It is written in bash and can be run in serial or parallel.  It uses functionality from the underlying packages.  The program was developed to integrate Dakota version 6.10 with Elmer FEM version 8.1.   It can be extended to other versions of Elmer FEM and Dakota with minor modifications. 
 
-The software versions are listed below. 
-The interface program can be extended to other versions of OpenFoam and Dakota with minor modifications.
-
- - Sandia Dakota version 6.10
- - OpenFoam versions 4,5 and 6
- - Operating system: Linux
-
-If you have questions/find this software helpful/would like to collaborate, you can reach me at anjali.sandip@und.edu
+Support email for questions: anjali.sandip@und.edu
