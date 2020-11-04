@@ -4,8 +4,8 @@ This program, OpenFOAM-Dakota interface, is released under license GNU GENERAL P
 An interface program for 2 way coupling between OpenFoam and Dakota has been developed. Furthermore, it was succesfully applied to benchmarks.
 The interface program along with benchmarks have been provided.
 
-Capabilities: This program integrates the capabilities of OpenFOAM and Sandia Dakota. 
-It provides a framework for multi-physics/phase simulations, uncertainty quantification, optimization, surrogate modeling, parallel computing and parameter studies.
+Capabilities: This program integrates the capabilities of multi-physics modeling software, OpenFOAM, and data analytics toolbox, Dakota. 
+Its key features include uncertainty quantification, surrogate modeling and parameter studies.
 
 If you use this program, please cite this repository -- Sandip, A. 2019, OpenFOAM-Dakota, v1.0, Zenodo, DOI: 10.5281/zenodo.3931101
 
