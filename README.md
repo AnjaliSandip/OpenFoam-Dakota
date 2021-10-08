@@ -1,7 +1,7 @@
 
 This program, OpenFOAM-Dakota interface, is released under license GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007.  It is maintained by Anjali Sandip.
 
-An interface program for 2 way coupling between OpenFoam and Dakota has been developed. Furthermore, it was succesfully applied to benchmarks.
+A program for 2 way interface between OpenFoam and Dakota has been developed. Furthermore, it was succesfully applied to benchmarks.
 The interface program along with benchmarks have been provided.
 
 Capabilities: This program integrates the capabilities of multi-physics modeling software, OpenFOAM, and data analytics toolbox, Dakota. 
